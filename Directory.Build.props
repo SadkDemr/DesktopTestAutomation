@@ -1,0 +1,8 @@
+<Project>
+  <!-- Solution'daki tüm projelere uygulanan ortak ayarlar -->
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+</Project>

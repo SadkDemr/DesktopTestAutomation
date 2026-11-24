@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+    <RootNamespace>DesktopTestAutomation.Tests</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FlaUI.Core" Version="5.0.0" />
+    <PackageReference Include="FlaUI.UIA3" Version="5.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.14.2" />
+    <PackageReference Include="NUnit" Version="4.6.1" />
+    <PackageReference Include="NUnit3TestAdapter" Version="5.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      Örnek uygulamayı yalnızca build sırası için referans alıyoruz:
+      Visual Studio'da testleri çalıştırdığınızda önce SampleWpfApp derlenir.
+      Kendi uygulamanızın yolu ise appsettings.json'daki AppPath ile verilir.
+    -->
+    <ProjectReference Include="..\..\src\SampleWpfApp\SampleWpfApp.csproj"
+                      ReferenceOutputAssembly="false" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Örnek uygulama testlerinin kullandığı exe yolu (aktif Configuration'a göre) -->
+    <AssemblyAttribute Include="System.Reflection.AssemblyMetadataAttribute">
+      <_Parameter1>SampleAppPath</_Parameter1>
+      <_Parameter2>$(MSBuildThisFileDirectory)..\..\src\SampleWpfApp\bin\$(Configuration)\net8.0-windows\SampleWpfApp.exe</_Parameter2>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

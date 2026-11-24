@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D2B5ADFF-4516-4EF1-B714-02FE5CF3B544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWpfApp", "src\SampleWpfApp\SampleWpfApp.csproj", "{562AAB3F-82FC-4F44-AB33-078FFDF3E7BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{0DB01609-1614-4F5E-9168-C43C130CA9D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopTestAutomation.Tests", "tests\DesktopTestAutomation.Tests\DesktopTestAutomation.Tests.csproj", "{E27DF077-C908-4EC0-9A35-7EF5BACBCD8F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{BF6D5518-2482-4C3C-A33A-701BB737D7F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocatorPicker", "tools\LocatorPicker\LocatorPicker.csproj", "{ACA3EE1C-811C-4A12-A779-70AB72529D81}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{562AAB3F-82FC-4F44-AB33-078FFDF3E7BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{562AAB3F-82FC-4F44-AB33-078FFDF3E7BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{562AAB3F-82FC-4F44-AB33-078FFDF3E7BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{562AAB3F-82FC-4F44-AB33-078FFDF3E7BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E27DF077-C908-4EC0-9A35-7EF5BACBCD8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E27DF077-C908-4EC0-9A35-7EF5BACBCD8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E27DF077-C908-4EC0-9A35-7EF5BACBCD8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E27DF077-C908-4EC0-9A35-7EF5BACBCD8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACA3EE1C-811C-4A12-A779-70AB72529D81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACA3EE1C-811C-4A12-A779-70AB72529D81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACA3EE1C-811C-4A12-A779-70AB72529D81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACA3EE1C-811C-4A12-A779-70AB72529D81}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{562AAB3F-82FC-4F44-AB33-078FFDF3E7BC} = {D2B5ADFF-4516-4EF1-B714-02FE5CF3B544}
+		{E27DF077-C908-4EC0-9A35-7EF5BACBCD8F} = {0DB01609-1614-4F5E-9168-C43C130CA9D8}
+		{ACA3EE1C-811C-4A12-A779-70AB72529D81} = {BF6D5518-2482-4C3C-A33A-701BB737D7F0}
+	EndGlobalSection
+EndGlobal

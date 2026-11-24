@@ -1,0 +1,33 @@
+<Window x:Class="SampleWpfApp.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        AutomationProperties.AutomationId="LoginWindow"
+        Title="Giriş" Width="360" SizeToContent="Height"
+        WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <!--
+        Otomasyon için kritik kural: test edilecek her elemente
+        AutomationProperties.AutomationId verin. Testler bu Id'ler üzerinden
+        elementleri bulur; metin veya pozisyon değişse bile testler kırılmaz.
+    -->
+    <StackPanel Margin="20">
+        <TextBlock Text="Kullanıcı adı" />
+        <TextBox x:Name="UsernameTextBox"
+                 AutomationProperties.AutomationId="UsernameTextBox" />
+
+        <TextBlock Text="Şifre" />
+        <PasswordBox x:Name="PasswordBox"
+                     AutomationProperties.AutomationId="PasswordBox" />
+
+        <TextBlock x:Name="LoginErrorText"
+                   AutomationProperties.AutomationId="LoginErrorText"
+                   Foreground="Firebrick" TextWrapping="Wrap" Margin="0,0,0,8" />
+
+        <Button x:Name="LoginButton"
+                AutomationProperties.AutomationId="LoginButton"
+                Content="Giriş yap" IsDefault="True"
+                HorizontalAlignment="Right" Margin="0"
+                Click="LoginButton_Click" />
+
+        <TextBlock Text="Demo: admin / admin123" Foreground="Gray" Margin="0,12,0,0" />
+    </StackPanel>
+</Window>
